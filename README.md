@@ -1,2 +1,3 @@
 # ckanakan.github.io
-My personal website
+This is my personal website. 
+It contains my resume and several projects that I have done.
