@@ -1,6 +1,6 @@
 
 <html>
-<title>EXReviews</title>
+<title>EXReviews 3</title>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,114 +8,140 @@
 
 
 <style>
+
 * {
   box-sizing: border-box;
 }
 
-style{
-	margin-top: 100px;
+.header, .footer {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  margin-bottom: 5px;
 }
 
-p {
-  line-height: 40px;
+.column {
+  float: left;
+  padding: 15px;
 }
 
-li {
-	float: left;
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.menu {
+  width: 25%;
+}
+
+.content {
+  width: 75%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #e6f7ff;
+  color: #ffffff;
+}
+
+.menu li:hover {
+  background-color: #0099cc;
 }
 
 
 body {
-  font-family: times;
-  line-height: 19.5px;
+  
+    background-color: #6699ff;
+    padding:10px 10px 10px 10px;
+    margin-right: 200px;
+    background-attachment: fixed;
 }
 
 
-
-
-.dropdown{
-
-	display:block;
-	color:white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
-
-
-
-/* Style the list inside the menu */
-ul {
-  list-style-type:center;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #b3ffff;
-    
-}
-
-li a {
-	display:block;
-	color:white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	color:black;
-}
-
-.active {
-  background-color: #611;
-  color: black;
-}
-
-li a:hover {
-	background-color: #333;
-}
-
-
-/* Style the list inside the menu */
 
 
 
 article {
-
-  
-float: left;
+ 
+  float: left;
   margin: 10px 10px 10px 1px;
   padding: 20px;
   background-color:#e6f7ff;
   width: 100%;
   height: auto;
-
   border-style: solid;
-  border-width: 3px;
-
-  border-color: #80d7ff;
-
-
-
- 
-}
+  border-width: 5px;
+  border-color:  black;
 
 }
+
+
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  article {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .header, .footer  {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+
+
+
 </style>
 
-
-<nav>
-	<ul>
-		<li><a href="index.html">Home</a> </li>
-		<li><a href="resume.html">Resume</a> </li>
-		<li><a href="projects.html">Projects</a> </li>
-		<li><a href="https://github.com/CKanakan">My GitHub</a> </li>
-	</ul>
-</nav>
-
-
-<body bgcolor="black"><font color="black">
+<body>
 
 
 
-<hr width="100%" size="10px" color="black" align="center">
+<div class="header">
+ <h1>EX Reviews</h1>
+</div>
+
+
+<div class="clearfix">
+  <div class="column menu">
+   <ul>
+    <li><a href="index.html">Home</a> </li>
+    <li><a href="resume.html">Resume</a> </li>
+    <li><a href="projects.html">Projects</a> </li>
+    <li><a href="https://github.com/CKanakan">My GitHub</a> </li>
+  </ul>
+  </div>
+
+
+
+ <div class="column content">
+   
+
+
+
+
+
+
+
+
 <article>
 <h1><center>Chrono Trigger:</center></h1>
 
@@ -123,16 +149,17 @@ float: left;
 
 <p></p>
 
-<img src="ExReviews/Chrono2.jpg" height="200" width="250" border="2">
+<img src="ExReviews/Chrono2.jpg" height="200" width="350" border="2">
 
-<img src="ExReviews/ChronoTS.png" height="200" width="450" border="2">
+<img src="ExReviews/ChronoTS.png" height="200" width="350" border="2">
 
-<img src="ExReviews/Chrono7.jpg" height="200" width="250" border="2">
+<img src="ExReviews/Chrono7.jpg" height="200" width="350" border="2">
 
-<img src="ExReviews/Chrono3.jpg" height="200" width="250" border="2">
+<img src="ExReviews/Chrono3.jpg" height="200" width="350" border="2">
 
 <p></p>
 </article>
+
 
 
 <article>
@@ -142,15 +169,15 @@ float: left;
 
 
 	
-<p>The Super Smash Bros franchise began in 1999 on the Nintendo 64 since then it has got 3 more entries Melee, Brawl, and U. This is a multiplayer fighter that brings Nintendo character to fight for glory. The controls are simple and easy to get accustomed to. The soundtracks are very good. However, if you need more help you can watch the in game tutorials. I highly recommend this if you have friends and family to play with. </p>
+<p>The Super Smash Bros franchise began in 1999 on the Nintendo 64 since then it has got 3 more entries Melee, Brawl, and U. </p><p>This is a multiplayer fighter that brings Nintendo character to fight for glory. The controls are simple and easy to get accustomed to. </p><p>The soundtracks are very good. However, if you need more help you can watch the in game tutorials. I highly recommend this if you have friends and family to play with. </p>
 <center>
 
 
-<img src="ExReviews/SSB.jpg" height="300" width="350" border="2">
+<img src="ExReviews/SSB.jpg" height="300" width="200" border="2">
 
-<img src="ExReviews/SBU.jpg" height="300" width="350" border="2">
+<img src="ExReviews/SBU.jpg" height="300" width="200" border="2">
 
-<img src="ExReviews/SMBU.jpg" height="300" width="350" border="2">
+<img src="ExReviews/SMBU.jpg" height="300" width="200" border="2">
 
 </center>
 <p></p>
@@ -167,11 +194,11 @@ float: left;
 
 <center>
 
-<img src="ExReviews/link3.jpg" height="300" width="350" border="2">
+<img src="ExReviews/link3.jpg" height="300" width="200" border="2">
 
-<img src="ExReviews/link2.jpg" height="300" width="350" border="2">
+<img src="ExReviews/link2.jpg" height="300" width="200" border="2">
 
-<img src="ExReviews/link4.jpg" height="300" width="350" border="2">
+<img src="ExReviews/link4.jpg" height="300" width="200" border="2">
 
 
 </center>
@@ -183,11 +210,43 @@ float: left;
 <p></p>
 
 </article>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
+<div class="footer">
+  <h1>
+      EX Reviews 
+  </h1>
+</div>
+
+
+
+
+</body>
+
+
+
+<footer>
 <center>
 
-<a href="ExReviews_1.html"><img src="ExReviews/button1.png"></a>
 
-<a href="ExReviews_2.html"><img src="ExReviews/button2.png"></a>
+
+
+<a href="ExReviews_1.html"><img src="ExReviews/button1.png"></a>
+<a href="ExReviews_3.html"><img src="ExReviews/button3.png"></a>
 
 </center>
+</footer>
+
 <html>
