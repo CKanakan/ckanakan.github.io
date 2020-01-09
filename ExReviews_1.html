@@ -1,98 +1,241 @@
+<!DOCTYPE html>
 <html>
-<title>EXReviews</title>
-
-
-
+<title>Ex Reviews</title>
+<body>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel ="stylesheet" type="text/css" href="style.css">
 
- 
+
+
 <style>
+
 * {
   box-sizing: border-box;
 }
 
-p {
-  line-height: 40px;
+.header, .footer {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  margin-bottom: 5px;
 }
 
-li {
-	float: left;
+.column {
+  float: left;
+  padding: 15px;
 }
 
-/* Style the list inside the menu */
-ul {
-  list-style-type:center;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow: hidden;
-    background-color: #b3ffff;   
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.menu {
+  width: 25%;
+}
+
+.content {
+  width: 75%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #e6f7ff;
+  color: #ffffff;
+}
+
+.menu li:hover {
+  background-color: #0099cc;
 }
 
 
-/* content within the list */
-li a {
-	display:block;
-	color:white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	color:black;
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-.active {
-  background-color: #611;
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
 
-li a:hover {
-	background-color: #1a8cff;
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.2s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 
-/* Style the list inside the menu */
+
+body {
+  
+    background-color: #ccffff;
+    padding:10px 10px 10px 10px;
+    margin-right: 200px;
+    background-attachment: fixed;
+}
+
 
 
 
 
 article {
-
-  
+ 
   float: left;
   margin: 10px 10px 10px 1px;
   padding: 20px;
   background-color:#e6f7ff;
   width: 100%;
   height: auto;
-
   border-style: solid;
   border-width: 5px;
-
-  border-color:  #80d7ff;
-
-
-  
-}
+  border-color:  black;
 
 }
+
+
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  article {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .header, .footer  {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+
+
+
 </style>
 
-
-<nav>
-	<ul>
-		<li><a href="index.html">Home</a> </li>
-		<li><a href="resume.html">Resume</a> </li>
-		<li><a href="projects.html">Projects</a> </li>
-		<li><a href="https://github.com/CKanakan">My GitHub</a> </li>
+<body>
 
 
-	</ul>
-</nav>
 
-<font color="#e6f7ff">
+<div class="header">
+ <h1>EX Reviews</h1>
+</div>
 
-<center><h1>EX Reviews</h1></center>
+
+<div class="clearfix">
+  <div class="column menu">
+   <ul>
+    <li><a href="index.html">Home</a> </li>
+    <li><a href="resume.html">Resume</a> </li>
+    <li><a href="projects.html">Projects</a> </li>
+    <li><a href="https://github.com/CKanakan">My GitHub</a> </li>
+  </ul>
+  </div>
+
+
+
+ <div class="column content">
+   
+
+
+
+
 
 
 
@@ -118,21 +261,54 @@ article {
     
     
     
-<p>Sonic Adventure came out in 1997 on the Sega Dreamcast. It is the first video game I ever played. It is high-speed platformer, where you have 6 characters to choose from all with their own stories. 
-There are eleven stages however every character goes through them in a different order. This is a game I enjoy a lot. The controls are good and it is an easy game to pick up and play. 
-The music is fantastic and adds to experience. The problems with the game are mostly due to aging. The pathways are narrow so there are areas where you are going to run into walls. 
-The biggest issue with the game is that you have to play and beat the game with all six character to get the final story. One of them has nothing to do with platforming, it’s a fishing game. </p>
+<p>Sonic Adventure came out in 1997 on the Sega Dreamcast. It is the first video game I ever played. It is high-speed platformer, where you have 6 characters to choose from all with their own stories. </p>
+
+<p>There are eleven stages however every character goes through them in a different order. This is a game I enjoy a lot. The controls are good and it is an easy game to pick up and play. </p>
+
+<p>The music is fantastic and adds to experience. The problems with the game are mostly due to aging. The pathways are narrow so there are areas where you are going to run into walls. </p>
+
+<p>The biggest issue with the game is that you have to play and beat the game with all six character to get the final story. One of them has nothing to do with platforming, it’s a fishing game. </p>
     
 <p>I recommend this game however, it does archaic flaws.</p>
 
 
 
 
-<img src="ExReviews/sonic_ad2.jpg" height="300" width="400" border="2">
+<!-- Slideshow container -->
+<div class="slideshow-container">
 
-<img src="ExReviews/SonicAd4.jpg" height="300" width="400" border="2">
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="ExReviews/sonic_ad2.jpg" width="100%" height="50%" border="2">
+    <!--<div class="text">Caption Text</div>-->
+  </div>
 
-<img src="ExReviews/Sonicad.jpg" height="300" width="400" border="2">
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="ExReviews/SonicAd4.jpg" width="100%" height="50%" border="2">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="ExReviews/Sonicad.jpg" width="100%" height="50%" border="2">
+    <img src="images/gback.gif" >
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
 
 </article>
 
@@ -141,23 +317,82 @@ The biggest issue with the game is that you have to play and beat the game with 
 <p>Mega-Man X debuted in 1993 on the Super Nintendo. It is the successor to the popular Mega-Man series. This is a jump and shot platformer with fast-paced gameplay.
 </p>
 
-<p>There are 13 stages in full. You take control of Mega-Man X as he tried thwart Sigma’s evil plans. In this game you have to ability to get upgrades if you find them in the stages. There's a mechanic in the game is where you gain the abilities of the bosses that you defeat. This is well designed and challenging video game. The great thing about this game is that it teaches you how to play through the games mechanics and set pieces. It has a fantastic soundtrack. Its design makes it easy for newcomer to get the hang of. The only problem with this game is that since you can choose order of the stage you play. You are going to choosing levels until you find the one that is best for you. I defiantly recommend this game.</p>
-        
-        
+<p>There are 13 stages in full. You take control of Mega-Man X as he tried thwart Sigma’s evil plans. In this game you have to ability to get upgrades if you find them in the stages.</p> <p>There's a mechanic in the game is where you gain the abilities of the bosses that you defeat. This is well designed and challenging video game. The great thing about this game is that it teaches you how to play through the games mechanics and set pieces.</p> <p>It has a fantastic soundtrack. Its design makes it easy for newcomer to get the hang of. The only problem with this game is that since you can choose order of the stage you play. You are going to choosing levels until you find the one that is best for you. I defiantly recommend this game.</p>
 
-<img src="ExReviews/MMX.jpg" height="300" width="400" border="2">
+<center>
+<img src="ExReviews/MMX.jpg" height="25%" width="30%" border="1">
 
-<img src="ExReviews/MMX2.jpg" height="300" width="400" border="2">
+<img src="ExReviews/MMX2.jpg" height="25%" width="30%" border="1">
 
-<img src="ExReviews/MMX2.jpg" height="300" width="400" border="2">
-
-
+<img src="ExReviews/MMX2.jpg" height="25%" width="30%" border="1">
+</center>
 </font>
  </article>   
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+  </div>
+</div>
+
+<div class="footer">
+  <h1>
+      EX Reviews 
+  </h1>
+</div>
+
+
+
+
 </body>
 
-<hr>
+
+
+<footer>
 <center>
 
 
@@ -167,5 +402,15 @@ The biggest issue with the game is that you have to play and beat the game with 
 <a href="ExReviews_3.html"><img src="ExReviews/button3.png"></a>
 
 </center>
+</footer>
 
-<html>
+
+</html>
+
+
+
+
+
+
+
+
