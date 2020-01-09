@@ -1,197 +1,257 @@
-<DOCTYPE>
-<html>
-<title> Projects </title>
+  <!DOCTYPE html>
+  <html>
+
+  <body>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel ="stylesheet" type="text/css" href="style.css">
 
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel ="stylesheet" type="text/css" href="style.css">
+  <head>
+  <style>
+  * {
+    box-sizing: border-box;
+  }
 
 
-<style>
-
-* {
-  box-sizing: border-box;
-}
-
-p {
-	
-  	line-height: 21.5px;
-}
-
-li {
-	float: left;
-}
 
 
-body 
-{
-  font-family: times;
-}
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #cceeff;
+  }
 
-/* Style the list inside the menu */
-ul {
-   list-style-type:center;
-    margin: 0;
-    padding: 0;
+  /* Header/Blog Title */
+  .header {
+    padding: 10px;
+    text-align: center;
+    background: white;
+  }
+
+  .header h1 {
+    font-size: 50px;
+  }
+
+  /* Style the top navigation bar */
+  .topnav {
     overflow: hidden;
-    background-color: #6666ff;
-}
+    background-color: #333;
+  }
 
-li a {
-	display:block;
-	color:white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
 
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
 
-li a:hover {
-	background-color: #333;
-}
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
 
-
-header 
-{
-  line-height: 20px;
-  text-align: center;
-  font-size: 30px;
-  color: black;
-}
-
-h1{
-	font-style: italic;
-}
-
-article {
-
-
-
-
-  line-height: 30px;	
-  float: left;
-  margin-top:1px;
-  margin-bottom: 10px;
-  padding: 20px;
-  background-color: #FFF;
-  width: 100%;
-  height: auto; 
-  background-color: #6666ff;
-  color: white;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #4d4dff;
-
-}
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #cceeff;
+    padding-left: 20px;
+  }
 
 
-img{
-  margin-top: 10px;	
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
-}
-
-
-video{
+  video{
   margin-top: 10px; 
   border-style: solid;
   border-width: 1px;
   border-color: black;
 }
 
-</style>
-
-
-<body>
 
 
 
 
-
-<nav>
-	<ul>
-    <li><a href="index.html">Home</a> </li>
-    <li><a href="resume.html">Resume</a> </li>
-    <li><a href="projects.html">Projects</a> </li>
-    <li><a href="https://github.com/CKanakan">My GitHub</a> </li>
-	</ul>
-</nav>
+  /* Fake image */
+  .fakeimg {
+    background-color: #b3e6ff;
+    width: 100%;
+    padding: 20px;
+  }
 
 
-<header>
-<h2>Programming</h2>
-</header>
-
-<article>
 
 
-<h1>Write A Number </h1>
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
 
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
-<p>I created a write a number program. It takes in numbers from an user's input and writes them out into text. The program was written in Java. After finishing this I gained a better understanding on designing programs. </p>
-
-
-<a href="https://github.com/CKanakan/Programming-/blob/master/Kanakan_Write_A_Number.cs"><img src="programming/WriteANumber.png" alt="Write a Number" 
-	   style="width:350px;height:270px;">
-</a>
-
-</article>
-
-<article>
-<h1>English to Metric</h1>
-
-
-<b>This program is an english to metric convertor. It takes metric units and converts to english units and vice versa. This was programmed in C#.</b>
-
-
-<a href="https://github.com/CKanakan/Programming-/blob/master/EnglishToMetric.cs">
-	<img src="programming/EnglishtoMetric.png" alt="EnglishtoMetric" 
-	   style="width:350px;height:270px;">
-</a>
-
-<a href="https://github.com/CKanakan/Programming-/blob/master/MetricToEnglish.cs
-"><img src="programming/MetrictoEnglish.png" alt="EnglishtoMetric" 
-	   style="width:350px;height:270px;">
-</a>
-</article>
-
-<article>
-
-<h1>EXReviews Website</h1>
-
-
-This is a websites called Ex Reviews. The topic for my website was game reviews. I chose several games I love playing and wrote quick reviews about them. I detailed the strengths and flaws of each game. Another aspect of this project was researching the targeted demographic.
-My targeted demographic was 17-35 years olds.
-
-<h1><p><b>Here is a link to the website.</b></p></h1>
-<a href="ExReviews_1.html">
-	<img src="ExReviews/Exreviews_Screen.png" alt="ExReviews" 
-	   style="width:350px;height:270px;">
-</a>
-
-</article>
-
-<article>
-
-<h1>Digital Video editing</h1>
-
-<p>Here is digital video I produced thru Adobe Premier 2018</p>
-<video style="background-color:Black;" width="320" height="240" controls>
-
-
-<source src="Music Video.mp4" type="video/mp4"><a>
-Your browser does not support the video tag.
-</video>
-
-
-</article>
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #333;
+    margin-top: 20px;
+  }
 
 
 
 
 
-</body>
 
-</html>
+
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+
+
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  </style>
+  </head>
+
+
+
+
+
+
+  <body>
+
+  <div class="header">
+    <h1>Projects</h1>
+  </div>
+
+  <div class="topnav">
+    <a href="resume.html">Resume</a>
+    <a href="projects.html">Projects</a>
+    <a href="https://github.com/CKanakan">Github</a>
+  </div>
+
+
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        
+        <h1>Write A Number </h1>
+
+
+          <p>I created a write a number program. It takes in numbers from an user's input and writes them out into text. The program was written in Java. After finishing this I gained a better understanding on designing programs. 
+          </p>
+
+
+              <p>  
+              <a href="https://github.com/CKanakan/Programming-/blob/master/Kanakan_Write_A_Number.cs">
+              <img src="programming/WriteANumber.png" alt="Write a Number" style="width:350px;height:270px;" border="2"> 
+              </a>
+              </p>
+              <hr>
+
+
+             <h1>English to Metric</h1>
+
+
+             <p>This program is an english to metric convertor. It takes metric units and converts to english units and vice versa. This was programmed in C#.</p>
+
+
+             <a href="https://github.com/CKanakan/Programming-/blob/master/EnglishToMetric.cs">
+             <img src="programming/EnglishtoMetric.png" alt="EnglishtoMetric" style="width:40%;height:270px;" border="2">
+             </a>
+
+              <a href="https://github.com/CKanakan/Programming-/blob/master/MetricToEnglish.cs">
+                <img src="programming/MetrictoEnglish.png" alt="EnglishtoMetric" style="width:40%;height:270px;" border="2">
+             </a>
+      </div>
+
+
+
+      <div class="card">
+
+      
+        <h1>Digital Video editing</h1>
+  <video style="background-color:Black;" width="320" height="240" controls>
+
+
+  <source src="Music Video.mp4" type="video/mp4"><a>
+  Your browser does not support the video tag.
+  </video>
+
+      </div>
+    </div>
+
+
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>EX Reviews Website</h2>
+
+
+          <a href="ExReviews_1.html">
+          <img src="ExReviews/Exreviews_Screen.png" alt="ExReviews" style="width:100%;height:270px;"  border="2">
+          </a>
+
+         
+         
+
+
+
+
+
+
+      </div>
+      <div class="card">
+        <div class="fakeimg"><a href="https://www.linkedin.com/in/charles-kanakan/">
+
+
+        <p>LinkedIN</p></a></div>
+
+        <div class="fakeimg"> <a href="resume.html"><p>Resume</p></a></div>
+        <div class="fakeimg">  <a href="projects.html"><p>Projects</p></a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+
+  <font color="white">
+  <h2>Charles Kanakan 2020</h2>
+  </font>
+
+  </div>
+
+
+
+
+  </body>
+
+  </html>
