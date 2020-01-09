@@ -1,218 +1,246 @@
-<DOCTYPE>
-<html>
-<title> Resume </title>
+  <!DOCTYPE html>
+  <html>
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel ="stylesheet" type="text/css" href="style.css">
-
-<style>
-* {
-  box-sizing: border-box;
-}
-
-style{
-	margin-top: 100px;
-}
-
-p {
-  text-indent: 50px;
-  line-height: 9.5px;
-}
-
-li {
-	float: left;
-}
+  <body>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel ="stylesheet" type="text/css" href="style.css">
 
 
-body {
-  font-family: times;
-}
+  <head>
 
+  <style>
+  * {
+    box-sizing: border-box;
+  }
 
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #cceeff;
+  }
 
+  /* Header/Blog Title */
+  .header {
+    padding: 10px;
+    text-align: center;
+    background: white;
+  }
 
-.dropdown{
+  .header h1 {
+    font-size: 50px;
+  }
 
-	display:block;
-	color:white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
-
-
-
-/* Style the list inside the menu */
-ul {
-    list-style-type:center;
-    margin: 0;
-    padding: 0;
+  /* Style the top navigation bar */
+  .topnav {
     overflow: hidden;
-    background-color: #6666ff;
-}
+    background-color: #333;
+  }
 
-li a {
-	display:block;
-	color:white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
 
-.active {
-  background-color: #611;
-  color: black;
-}
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
 
-li a:hover {
-	background-color: #333;
-}
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #cceeff;
+    padding-left: 20px;
+  }
 
 
-/* Style the list inside the menu */
+  .fakeimg {
+    background-color: #b3e6ff;
+    width: 100%;
+    padding: 20px;
+  }
 
-header 
-{
-  line-height: 20px;
-  text-align: center;
-  font-size: 30px;
-  color: black;
-}
-
-
-article {
-
-  
-  float: left;
-  margin-top: 1px;
-  padding: 20px;
-  background-color: #6666ff;
+  .fakeimg2 {
+  background-color: #00FFFF;
   width: 100%;
-  height: auto;
-
-
- 
+  padding: 20px;
 }
-</style>
-<body>
-
-<nav>
-	<ul>
-    		<li><a href="index.html">Home</a> </li>
-    		<li><a href="resume.html">Resume</a> </li>
-    		<li><a href="projects.html">Projects</a> </li>
-    		<li><a href="https://github.com/CKanakan">My GitHub</a> </li>
-	</ul>
-</nav>
 
 
-<center>
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
 
-<header>
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
-<h2>Resume</h2>
-
-</header>
-
-</center>
-<section>
- 
-
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #333;
+    margin-top: 20px;
+  }
 
 
-
-
-
-  <article>
-
- 
-<font color= "white">
-  
-
-  EDUCATION:
-  	<hr> 
-<b>Curry College—Milton, MA								                  May–2019	</b>
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
 
 
 
-<p>
-	<br>Bachelor of Science Degree in Information Technology, minor in Applied Computing, Dean’s List</br>
-</p>
-<b>EXPERIENCE:</b>
-<hr>
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  </style>
+  </head>
+  <body>
+
+  <div class="header">
+    <h1>Resume</h1>
+
+  </div>
+
+  <div class="topnav">
+    <a href="resume.html">Resume</a>
+    <a href="projects.html">Projects</a>
+    <a href="https://github.com/CKanakan">Github</a>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        
 
 
-<b>IT Analyst, Curry College—Milton, MA                                                            	September 2016–May 2019
-</b>
+        <b>EXPERIENCE:</b>
+  <hr>
+
+
+  <b>IT Analyst, Curry College—Milton, MA                                                             September 2016–May 2019
+  </b>
 
 
 
-      <p>Responsible for troubleshooting technical issues for staff and students.</p>
-      <p>Analyzed and fixed hardware issues.</p>
-  	  <p>Provided technical support in-person and on the phone.</p>
-  	  <p>Learned new technologies to enhance job performance and knowledge.</p>
+        <p>Responsible for troubleshooting technical issues for staff and students.</p>
+        <p>Analyzed and fixed hardware issues.</p>
+        <p>Provided technical support in-person and on the phone.</p>
+        <p>Learned new technologies to enhance job performance and knowledge.</p>
+
+        <b>TECHNICAL SKILLS:</b>
+  <hr>
+  <b>Software Development:</b>
+  <p>Proficient in C++, C#, Java</p>
+  <p>Created several programs</p>
+  <p>English to Metric converter</p>
+  <p>Say A Number</p> 
+
+
+  <b>Web Development:</b>
+  <hr>
+  <p>Proficient in HTML, CSS</p>
+  <p>Solid understanding of user experience design</p>
+  <p>Created a website called EXreviews</p>
 
 
 
-<b>LEADERSHIP:</b>
-<hr>
 
-<b>Vice President, Tech Club—Milton, MA					             September 2018–May 2019 </b>
-<p>Lead club initiatives, emphasizing recruitment and member retention.</p>
-<p>Coordinated with President and executive members on identifying future club leaders<p> 
-	<p> providing mentorship to new officers. </p>
+  <b>LEADERSHIP:</b>
+  <hr>
 
-
-
-<b>TECHNICAL SKILLS:</b>
-<hr>
-<b>Software Development:</b>
-<p>Proficient in C++, C#, Java</p>
-<p>Created several programs</p>
-<p>English to Metric converter</p>
-<p>Say A Number</p> 
+  <b>Vice President, Tech Club—Milton, MA                      September 2018–May 2019 </b>
+  <p>Lead club initiatives, emphasizing recruitment and member retention.</p>
+  <p>Coordinated with President and executive members on identifying future club leaders<p> 
+    <p> providing mentorship to new officers. </p>
 
 
-<b>Web Development:</b>
-<p>Proficient in HTML, CSS</p>
-<p>Solid understanding of user experience design</p>
-<p>Created a website called EXreviews</p>
 
 
-<b>SOFT SKILLS:</b>
-<hr>
-<p>Strong verbal and written communications skill<p>
-<p>Critical Thinker</p>
-<p>Problem solver</p>
-<p>Works effectively in teams</p>
-<p>Can work independently</p> 
-VOLUNTEER:
-<hr>
-<b>Speaker, Boston Code Camp—Burlington, MA</b>
-<p>Presented The Applications of Virtual Reality to tech industry leaders.</p> 
-<p>Assisted speakers and attendees with logistics and information as lead volunteer.
-</p> 
-<p>Attended discussions with industry leaders focusing on emerging technology.</p>
 
 
-  </article>
-</section>
 
-</font>
+      </div>
+      <div class="card">
+        <h2>Skills</h2>
 
-</body>
+        <hr>
 
-<footer>
+        <p>Strong verbal and written communications skills<p>
+        <p>Critical Thinker</p>
+        <p>Problem solver</p>
+        <p>Learn comcepts quickly</p>
+        <p>Works effectively in teams</p>
+      <p>Can work independently</p> 
 
-<font color= "black">
+      VOLUNTEER:
+  <hr>
+  <b>Speaker, Boston Code Camp—Burlington, MA</b>
+  <p>Presented The Applications of Virtual Reality to tech industry leaders.</p> 
+  <p>Assisted speakers and attendees with logistics and information as lead volunteer.
+  </p> 
+  <p>Attended discussions with industry leaders focusing on emerging technology.</p>
+
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>Education</h2>
+         <b>EDUCATION: 
+          Curry College Milton, MA May–2019 
+         </b>
+
+         <p>Bachelor of Science Degree in Information Technology,</p> 
+         <p>Minor in Applied Computing, Dean’s List</p>
 
 
-<hr width="100%" size="5px" color="black" align="center"></>
+      </div>
+      <div class="card">
+        <div class="fakeimg"><a href="https://www.linkedin.com/in/charles-kanakan/">
+        <p>LinkedIN</p></a></div>
 
-<center><h2>Contact me: charleskanakan@gmail.com</h2></center>
-</font>
-</footer>
+        <div class="fakeimg2"> <a href="resume.html"><p>Resume</p></a></div>
+        <div class="fakeimg">  <a href="projects.html"><p>Projects</p></a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+
+  <font color="white">
+  <h2>Charles Kanakan 2020</h2>
+  </font>
+
+  </div>
 
 
-</html>
+
+
+  </body>
+
+  </html>
