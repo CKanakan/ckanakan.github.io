@@ -1,169 +1,212 @@
-<DOCTYPE>
+<!DOCTYPE html>
 <html>
-<title>Home Page</title>
 
-
+<body>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel ="stylesheet" type="text/css" href="style.css">
 
 
-
+<head>
 <style>
-
-
 * {
   box-sizing: border-box;
 }
 
-
-p {
-    line-height: 21.5px;
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #cceeff;
 }
 
-li {
+.header {
+  padding: 10px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.topnav a {
   float: left;
-}
-
-/* Style the list inside the menu */
-ul {
-  list-style-type:center;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #6666ff;
-}
-
-li a {
-  display:block;
-  color:white;
+  display: block;
+  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover {
-  background-color: #333;
-}
-
-
-/* Style the list inside the menu */
-
-header 
-{
-  text-align: center;
-  font-size: 30px;
-  line-height: 20px;
+.topnav a:hover {
+  background-color: #ddd;
   color: black;
 }
 
-
-
-article {
-
-
-  line-height: 30px;  
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
   float: left;
-  margin-top:1px;
-  margin-bottom: 10px;
-  padding: 20px;
-  width: 100%;
-  height: auto; 
-  background-color: #6666ff;
-  color: white;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #4d4dff;
+  width: 75%;
 }
 
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #cceeff;
+  padding-left: 20px;
+}
+
+
+
+
+/* Fake image */
+.fakeimg {
+  background-color: #b3e6ff;
+  width: 100%;
+  padding: 20px;
+}
+
+.fakeimg2 {
+  background-color: #00FFFF;
+  width: 100%;
+  padding: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #333;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
 </style>
-
-
-
+</head>
 <body>
 
+<div class="header">
+  <h1>Charles Kanakan</h1>
+ <b> <p>Information Technology Major</p> </b>
+</div>
 
-<body >
+<div class="topnav">
+  <a href="index.html">About Me</a>
+  <a href="resume.html">Resume</a>
+  <a href="projects.html">Projects</a>
+  <a href="https://github.com/CKanakan">Github</a>
+</div>
 
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>I'm Charles Kanakan an Information Technology major from Curry College. I am bilingual, I speak English and French. </p>
+      
+      <p>I have been learning software for the past 5 years, being exposed to several different programming languages along the way.</p>
 
-<nav>
-	<ul>
-		<li><a href="index.html">Home</a> </li>
-		<li><a href="resume.html">Resume</a> </li>
-    <li><a href="projects.html">Projects</a> </li>
-		<li><a href="https://github.com/CKanakan">My GitHub</a> </li>
-	</ul>
-</nav>
+      <p>I created several programs. I have also designed and coded a website. In addition to working on projects with a team and independently. I can adapt and learn new technologies and software very quickly.</p> 
 
+      <p>I am a quick learner and can adapt to many situations. I have worked as an IT student analyst and a tutor. </p>
 
-<center>
-      <header>
-              <h2>Charles Kanakan 
-                <p>Software Developer</p></h2>
-      </header>
-</center>
-
-
-
-
-<section>
-
-
-<article>
-
-
-
-I'm Charles Kanakan an Information Technology major from Curry College. I am bilingual, I speak English and French. 
-
-I have been learning software for the past 5 years, being exposed to several different programming languages along the way. 
-
-I created several programs. I have also designed and coded a website. In addition to working on projects with a team and independently. I can adapt and learn new technologies and software very quickly. 
-
-I am a quick learner and can adapt to many situations. I have worked as an IT student analyst and a tutor. 
+</p>
 
 
 
 
-
-</article>
-
-
-
-
-<article>
-  <b>TECHNICAL SKILLS:</b>
-    <hr>
+    </div>
+    <div class="card">
+      <h2>Skills</h2>
+      
+      
+      <p><b>TECHNICAL SKILLS:</b></p>
+      <hr>
       <b>Programming</b>
         <p>Proficient in C++, C#, Java</p>
         <p>Proficient in HTML, CSS</p>
         <p>Solid understanding of user experience design</p>
 
       <b>SOFT SKILLS:</b>
-<hr>
+      <hr>
 
-<p>Strong verbal and written communications skill<p>
-<p>Critical Thinker</p>
-<p>Problem solver</p>
-<p>Learn comcepts quickly</p>
-<p>Works effectively in teams</p>
-<p>Can work independently</p> 
+      <p>Strong verbal and written communications skills<p>
+      <p>Critical Thinker</p>
+      <p>Problem solver</p>
+      <p>Learn comcepts quickly</p>
+      <p>Works effectively in teams</p>
+    <p>Can work independently</p> 
+
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Education</h2>
+       <b>EDUCATION: 
+        Curry College Milton, MA May–2019 
+       </b>
+
+       <p>Bachelor of Science Degree in Information Technology,</p> 
+       <p>Minor in Applied Computing, Dean’s List</p>
 
 
-</article>
+    </div>
+    <div class="card">
+      <div class="fakeimg"><a href="https://www.linkedin.com/in/charles-kanakan/">
+      <p>LinkedIN</p></a></div>
+
+      <div class="fakeimg2"> <a href="resume.html"><p>Resume</p></a></div>
+      <div class="fakeimg">  <a href="projects.html"><p>Projects</p></a></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+
+<font color="white">
+<h2>Charles Kanakan 2020</h2>
+</font>
+
+</div>
+
+
+
 
 </body>
-<footer>
-<center>
 
-<article>
-<p>Contact Me: Charleskanakan@gmail.com</p>
-<a href="https://www.linkedin.com/in/charles-kanakan/">My LinkedIN: </a>
-
-</article>
-
-
-
-
-</center>
-</footer>
 </html>
